@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 echo "\n dotnet:"
 time docker run -it -v $PWD/csharp:/mnt mcr.microsoft.com/dotnet/sdk dotnet run --project /mnt/
 echo "\n node:"
