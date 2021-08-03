@@ -1,2 +1,4 @@
 /csharp/bin
 /csharp/obj
+/rust/target
+/rust/cargo

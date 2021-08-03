@@ -10,4 +10,4 @@ This is a trivial task for any language, but instead of measuring how many times
 
 ## Why
 
-Being able to see the result of a code change _fast_ is a great developer experience (DX).
+Being able to see the result of a code change _fast_ is an important developer experience (DX) feature.
