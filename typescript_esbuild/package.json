@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "scripts": {
+    "compile_and_run": "esbuild index.ts | node "
+  },
+  "dependencies": {
+    "esbuild": "latest"
+  }
+}

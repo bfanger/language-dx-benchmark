@@ -1,6 +1,6 @@
 # Bob's language DX performance benchmark
 
-## The task:
+## The task
 
 Convert a json string into a data structure, add two values (1 and 2) from that data structure and print the result (3).
 

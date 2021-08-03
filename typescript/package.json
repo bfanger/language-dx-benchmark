@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "dependencies": {
+    "ts-node": "latest",
+    "typescript": "latest",
+    "@types/node": "latest"
+  }
+}

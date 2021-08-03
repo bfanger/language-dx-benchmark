@@ -2,3 +2,5 @@
 /csharp/obj
 /rust/target
 /rust/cargo
+/typescript/node_modules
+/typescript_esbuild/node_modules

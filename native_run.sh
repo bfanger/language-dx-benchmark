@@ -1,13 +1,23 @@
 #!/bin/sh
-set -e
-echo "\n dotnet:"
-time dotnet run --project ./csharp/
-echo "\n node:"
-time node ./node/index.js
-echo "\n php:"
-time php ./php/index.php
-echo "\n golang:"
+TIMEFORMAT=" in %Rs"
+
+# Compiled languages
+echo "\nGo:"
 time go run ./go/main.go
-echo "\n rust:"
+echo "\nC#:"
+time dotnet run --project ./csharp/
+echo "\nRust:"
 touch rust/src/main.rs
 time cargo run --quiet --manifest-path ./rust/Cargo.toml
+echo "\nTypescript:"
+# npm -g i ts-node
+time ts-node ./typescript/index.ts
+
+# Interpreted languages 
+echo "\nPHP:"
+time php ./php/index.php
+echo "\nJavascript:"
+time node ./javascript/index.js
+echo "\nTypescript (esbuild):" # esbuild's typescript doesn't perform typechecking
+# npm -g i esbuild
+time esbuild ./typescript_esbuild/index.ts | node
