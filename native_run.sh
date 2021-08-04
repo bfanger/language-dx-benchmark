@@ -16,6 +16,8 @@ time ts-node ./typescript/index.ts
 # Interpreted languages 
 echo "\nPHP:"
 time php ./php/index.php
+echo "\nPython:"
+time python ./python/index.py
 echo "\nJavascript:"
 time node ./javascript/index.js
 echo "\nTypescript (esbuild):" # esbuild's typescript doesn't perform typechecking

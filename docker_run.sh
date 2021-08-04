@@ -10,5 +10,6 @@ docker run --rm -it -v $PWD/typescript:/mnt node bash -e /mnt/run.sh
 
 # Interpreted languages 
 docker run --rm -it -v $PWD/php:/mnt php bash -e /mnt/run.sh
+docker run --rm -it -v $PWD/python:/mnt python bash -e /mnt/run.sh
 docker run --rm -it -v $PWD/javascript:/mnt node bash -e /mnt/run.sh
 docker run --rm -it -v $PWD/typescript_esbuild:/mnt node bash -e /mnt/run.sh
