@@ -4,6 +4,7 @@ TIMEFORMAT=" in %Rs"
 
 # Compiled languages
 docker run --rm -it -v $PWD/go:/mnt golang bash -e /mnt/run.sh
+docker run --rm -it -v $PWD/swift:/mnt swift bash -e /mnt/run.sh
 docker run --rm -it -v $PWD/csharp:/mnt mcr.microsoft.com/dotnet/sdk bash -e /mnt/run.sh
 docker run --rm -it -v $PWD/rust:/mnt rust bash -e /mnt/run.sh
 docker run --rm -it -v $PWD/typescript:/mnt node bash -e /mnt/run.sh

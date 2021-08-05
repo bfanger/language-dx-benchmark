@@ -4,6 +4,8 @@ TIMEFORMAT=" in %Rs"
 # Compiled languages
 echo "\nGo:"
 time go run ./go/main.go
+echo "\nSwift:"
+time swift ./swift/Sources/swift/main.swift 
 echo "\nC#:"
 time dotnet run --project ./csharp/
 echo "\nRust:"
