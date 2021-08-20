@@ -11,9 +11,11 @@ time dotnet run --project ./csharp/
 echo "\nRust:"
 touch rust/src/main.rs
 time cargo run --quiet --manifest-path ./rust/Cargo.toml
-echo "\nTypescript:"
+echo "\nTypescript (ts-node):"
 # npm -g i ts-node
 time ts-node ./typescript/index.ts
+echo "\nTypescript (deno):"
+time deno run --quiet ./typescript_deno/index.ts
 
 # Interpreted languages 
 echo "\nPHP:"
