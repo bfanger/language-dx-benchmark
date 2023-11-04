@@ -9,6 +9,8 @@ docker run --rm -it -v $PWD/csharp:/mnt mcr.microsoft.com/dotnet/sdk bash -e /mn
 docker run --rm -it -v $PWD/rust:/mnt rust bash -e /mnt/run.sh
 docker run --rm -it -v $PWD/typescript:/mnt node bash -e /mnt/run.sh
 docker run --rm -it -v $PWD/typescript_deno:/mnt denoland/deno bash -e /mnt/run.sh
+docker run --rm -it -v $PWD/typescript_bun:/mnt oven/bun bash -e /mnt/run.sh
+
 
 # Interpreted languages 
 docker run --rm -it -v $PWD/php:/mnt php bash -e /mnt/run.sh
