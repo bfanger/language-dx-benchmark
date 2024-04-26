@@ -11,3 +11,17 @@ This is a trivial task for any language, but instead of measuring how many times
 ## Why
 
 Being able to see the result of a code change _fast_ is an important developer experience (DX) feature.
+
+## Results (2024)
+
+| Language                      | Initial    | Incremental |
+| ----------------------------- | ---------- | ----------- |
+| Go                            | 🐢 slow    | 🐇 fast     |
+| Swift                         | 🐢 slow    | 🐢 slow     |
+| C#                            | 🐢 slow    | 🐌 slowest  |
+| Rust                          | 🐌 slowest | 🐇 fast     |
+| Typescript (ts-node)          | 🐢 slow    | 🐢 slow     |
+| Typescript (deno/bun/esbuild) | 🐇 fast    | 🐇 fast     |
+| PHP                           | 🐇 fast    | 🐇 fast     |
+| Javascript (node)             | 🐇 fast    | 🐇 fast     |
+| Python                        | 🐇 fast    | 🐇 fast     |

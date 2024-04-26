@@ -21,9 +21,11 @@ time deno run --quiet ./typescript_deno/index.ts
 echo "\nPHP:"
 time php ./php/index.php
 echo "\nPython:"
-time python ./python/index.py
+time python3 ./python/index.py
 echo "\nJavascript:"
 time node ./javascript/index.js
 echo "\nTypescript (esbuild):" # esbuild's typescript doesn't perform typechecking
 # npm -g i esbuild
 time esbuild ./typescript_esbuild/index.ts | node
+echo "\nTypescript (bun):"
+time bun ./typescript_bun/index.ts
